@@ -26,6 +26,6 @@ node {
     }
 
     stage('Remove unused docker image') {
-        sh "docker ps -a" // sh "docker rmi ${full_image_name}"
+        sh "docker rmi ${full_image_name}"
     }
 }
